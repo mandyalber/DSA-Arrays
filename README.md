@@ -3,27 +3,28 @@
 1. Implement an Array class from scratch.
 
 Walk through each step of implementing an array. Don't rush through this by copying and pasting the code samples. After you've walked through it and you understand the code of the Array class, hide the sample code and try writing the Array class from scratch using the memory module here for allocating memory.
+
 Be sure to export the memory module and then import it using require.
+
 2. Explore the push() method
 
 Using the Array class you just created above, add an item to the array. Use the following function:
 
-function main(){
+    function main(){
+        Array.SIZE_RATIO = 3;
 
-    Array.SIZE_RATIO = 3;
+        // Create an instance of the Array class
+        let arr = new Array();
 
-    // Create an instance of the Array class
-    let arr = new Array();
+        // Add an item to the array
+        arr.push(3);
 
-    // Add an item to the array
-    arr.push(3);
+        console.log(arr);
+    }
 
-    console.log(arr);
-}
+What is the length, capacity and memory address of your array?
 
-    What is the length, capacity and memory address of your array?
-
-    Add the following in the main function and then print the array:
+Add the following in the main function and then print the array:
 
     ...
     arr.push(5);
@@ -32,30 +33,31 @@ function main(){
     arr.push(45);
     arr.push(10);
 
-    What is the length, capacity and memory address of your array? Explain the result of your program after adding the new lines of code.
+What is the length, capacity and memory address of your array? Explain the result of your program after adding the new lines of code.
 
 3. Exploring the pop() method
 
-    Add the following in the main function and then print the array:
+Add the following in the main function and then print the array:
 
       ...
       arr.pop();
       arr.pop();
       arr.pop();
 
-    What is the length, capacity, and address of your array? Explain the result of your program after adding the new lines of code.
+What is the length, capacity, and address of your array? Explain the result of your program after adding the new lines of code.
 
 4. Understanding more about how arrays work
 
-    Print the 1st item in the array arr.
+Print the 1st item in the array arr.
 
-    Empty the array and add just 1 item: arr.push("tauhida");
+Empty the array and add just 1 item: arr.push("tauhida");
 
-    Print this 1 item that you just added. What is the result? Can you explain your result?
+Print this 1 item that you just added. What is the result? Can you explain your result?
 
-    What is the purpose of the _resize() function in your Array class?
+What is the purpose of the _resize() function in your Array class?
 
 You can use JavaScript's built-in arrays to solve the following drills. After you write the algorithm, identify its time complexity and determine if it needs to be optimized. Start each problem by understanding the problem and coming up with some sample input and output. For your convenience, a few sample input and output are provided.
+
 5. URLify a string
 
 A common mistake users make when they type in an URL is to put spaces between words or letters. A solution that developers can use to solve this problem is to replace any spaces with a %20. Write a method that takes in a string and replaces all its empty spaces with a %20. Your algorithm can only make 1 pass through the string. Examples of input and output for this problem can be
@@ -71,6 +73,7 @@ A common mistake users make when they type in an URL is to put spaces between wo
 6. Filtering an array
 
 Imagine you have an array of numbers. Write an algorithm to remove all numbers less than 5 from the array. DO NOT use Array's built-in .filter() method here; write the algorithm from scratch.
+
 7. Max sum in the array
 
 You are given an array containing positive and negative integers. Write an algorithm which will find the largest sum in a continuous sequence.
