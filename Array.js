@@ -3,7 +3,7 @@ const memory = require('./memory')
 class Array {
     constructor() {
         this.length = 0;
-        this.ptr = mmory.allocate(this.length);
+        this.ptr = memory.allocate(this.length);
     }
 
     push(value) {
